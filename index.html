@@ -43,54 +43,53 @@
             <ul>
                 <li class="active">
                     <p class="title">Text to Image</p>
-                    <form>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <p>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem
-                                        Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere
-                                        bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı
-                                        sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle
-                                        kalmamış, </p>
-                                </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <p>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem
+                                    Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere
+                                    bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı
+                                    sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle
+                                    kalmamış, </p>
                             </div>
-                            <form>
-                                <div class="col-12 col-lg-6">
-                                    <div class="form-group">
-                                        <label>
-                                            Prompt
-                                        </label>
-                                        <textarea></textarea>
-                                    </div>
-                                 
-                                </div>
-                                <div class="col-12 col-lg-6">
-                                    <div class="form-group">
-                                        <label>
-                                            Negative Prompt
-                                        </label>
-                                        <textarea></textarea>
-                                    </div>
-                                  
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-group text-end">
-                                        <input type="submit" class="cta" value="Generate" />
-                                    </div>
-                                    
-                                </div>
-                            </form>
-                           
-                            <div class="col-12">
+                        </div>
+                        <form id="frmTxt2Img" method="post" action="javascript:;">
+                            <div class="col-12 col-lg-6">
                                 <div class="form-group">
-                                    <div class="image">
-                                        <img
-                                            src="https://scontent.fist1-2.fna.fbcdn.net/v/t31.18172-8/17973860_1917923271825186_5452870843763132127_o.jpg?_nc_cat=111&ccb=1-7&_nc_sid=9267fe&_nc_ohc=hO5v-lf5UOkAX-wRRgx&_nc_ht=scontent.fist1-2.fna&oh=00_AfCSHljAx1yMAB2eY3lOLtNei8EnQZX5QDiQU31Pkb5Qgg&oe=65316EC3">
-                                    </div>
+                                    <label>
+                                        Prompt
+                                    </label>
+                                    <textarea name="prompt"></textarea>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="form-group">
+                                    <label>
+                                        Negative Prompt
+                                    </label>
+                                    <textarea name="n_prompt"></textarea>
+                                </div>
+
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group text-end">
+                                    <input type="submit" class="cta" value="Generate" />
+                                </div>
+
+                            </div>
+                        </form>
+
+                        <div class="col-12 hide" id="resultContent">
+                            <div class="form-group">
+                                <div class="image">
+                                    <img src="#">
                                 </div>
                             </div>
                         </div>
-                    </form>
+                    </div>
+
                 </li>
                 <li>
                     <p class="title">Image to Image</p>
