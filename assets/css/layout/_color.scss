@@ -1,5 +1,56 @@
 body {
-  &.dark {
+ 
+  color: $black;
+  background: $white;
+  .left ul a,
+  .title,
+  label,
+  select,
+  textarea,
+  input {
+    color: $white;
+  }
+  .cta{
+    color: $color2;
+  }
+  .left {
+    background-color: $color1;
+    ul{
+      li.active a{
+        color: $white;
+      }
+      li:hover a{
+        color: $white;
+      }
+    }
+  }
+  .color-button {
+    .fa-regular.fa-moon {
+      display: none;
+    }
+    .fa-solid.fa-moon-moon {
+      display: block;
+    }
+  }
+  .login-content {
+    padding: 30px;
+    border: 1px solid $color1;
+    background: $color1;
+  }
+  input,
+  textarea,
+  select {
+    color: $white;
+    border: 1px solid $color2;
+    background: $color2;
+    &::placeholder {
+      color: $white;
+    }
+  }
+  p,title{
+    color: $black;
+  }
+  &.active {
     background: #0f172a;
     color: $color1;
     .cta,
@@ -8,26 +59,42 @@ body {
     label,
     select,
     textarea,
-    input {
+    input,
+    .cta {
       color: $color1;
     }
-    .color-button{
-        .fa-regular.fa-moon{
-            display: none;
-        }
-        .fa-solid.fa-moon-moon{
-            display: block;
-        }
+    input,
+    select,
+    textarea,
+    .cta {
+      background: $color2;
     }
-    .login-content{
-        padding: 30px;
-        border: 1px solid rgba(255,255,255,0.4);
+    .left {
+      background: #151f38;
     }
-    input,textarea,select{
-        border: 1px solid rgba(255,255,255,0.4);
-        &::placeholder {
-            color: $color1;
-        }
+    .color-button {
+      .fa-regular.fa-moon {
+        display: none;
+      }
+      .fa-solid.fa-moon-moon {
+        display: block;
+      }
+    }
+    .login-content {
+      padding: 30px;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      background: transparent;
+    }
+    input,
+    textarea,
+    select {
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      &::placeholder {
+        color: $color1;
+      }
+    }
+    .title,p{
+      color: $color1;
     }
   }
 }

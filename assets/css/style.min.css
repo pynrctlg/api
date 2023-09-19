@@ -42,7 +42,6 @@
 input,
 select {
   width: 100%;
-  background: #283961;
   padding-left: 20px !important;
   height: 50px;
   border: none;
@@ -51,7 +50,6 @@ select {
 
 textarea {
   width: 100%;
-  background: #283961;
   padding: 20px !important;
   height: 120px;
   border: none;
@@ -60,7 +58,6 @@ textarea {
 }
 
 .cta {
-  background: #283961;
   padding: 5px 15px;
   display: inline-block;
   width: auto !important;
@@ -10865,7 +10862,6 @@ ul {
   max-width: 250px;
   min-height: 100vh;
   width: 100%;
-  background: #151f38;
   padding-top: 50px;
 }
 .left .logo {
@@ -10910,35 +10906,106 @@ ul {
   display: block;
 }
 
-body.dark {
+body {
+  color: #000;
+  background: #FFF;
+}
+body .left ul a,
+body .title,
+body label,
+body select,
+body textarea,
+body input {
+  color: #FFF;
+}
+body .cta {
+  color: #283961;
+}
+body .left {
+  background-color: #b8c2cf;
+}
+body .left ul li.active a {
+  color: #FFF;
+}
+body .left ul li:hover a {
+  color: #FFF;
+}
+body .color-button .fa-regular.fa-moon {
+  display: none;
+}
+body .color-button .fa-solid.fa-moon-moon {
+  display: block;
+}
+body .login-content {
+  padding: 30px;
+  border: 1px solid #b8c2cf;
+  background: #b8c2cf;
+}
+body input,
+body textarea,
+body select {
+  color: #FFF;
+  border: 1px solid #283961;
+  background: #283961;
+}
+body input::-moz-placeholder, body textarea::-moz-placeholder, body select::-moz-placeholder {
+  color: #FFF;
+}
+body input::placeholder,
+body textarea::placeholder,
+body select::placeholder {
+  color: #FFF;
+}
+body p, body title {
+  color: #000;
+}
+body.active {
   background: #0f172a;
   color: #b8c2cf;
 }
-body.dark .cta,
-body.dark .left ul a,
-body.dark .title,
-body.dark label,
-body.dark select,
-body.dark textarea,
-body.dark input {
+body.active .cta,
+body.active .left ul a,
+body.active .title,
+body.active label,
+body.active select,
+body.active textarea,
+body.active input,
+body.active .cta {
   color: #b8c2cf;
 }
-body.dark .color-button .fa-regular.fa-moon {
+body.active input,
+body.active select,
+body.active textarea,
+body.active .cta {
+  background: #283961;
+}
+body.active .left {
+  background: #151f38;
+}
+body.active .color-button .fa-regular.fa-moon {
   display: none;
 }
-body.dark .color-button .fa-solid.fa-moon-moon {
+body.active .color-button .fa-solid.fa-moon-moon {
   display: block;
 }
-body.dark .login-content {
+body.active .login-content {
   padding: 30px;
   border: 1px solid rgba(255, 255, 255, 0.4);
+  background: transparent;
 }
-body.dark input, body.dark textarea, body.dark select {
+body.active input,
+body.active textarea,
+body.active select {
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
-body.dark input::-moz-placeholder, body.dark textarea::-moz-placeholder, body.dark select::-moz-placeholder {
+body.active input::-moz-placeholder, body.active textarea::-moz-placeholder, body.active select::-moz-placeholder {
   color: #b8c2cf;
 }
-body.dark input::placeholder, body.dark textarea::placeholder, body.dark select::placeholder {
+body.active input::placeholder,
+body.active textarea::placeholder,
+body.active select::placeholder {
+  color: #b8c2cf;
+}
+body.active .title, body.active p {
   color: #b8c2cf;
 }/*# sourceMappingURL=style.min.css.map */

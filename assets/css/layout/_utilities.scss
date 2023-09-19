@@ -40,7 +40,7 @@
 input,
 select {
   width: 100%;
-  background: $color2;
+  
   padding-left: 20px !important;
   height: 50px;
   border: none;
@@ -51,7 +51,6 @@ select {
 
 textarea {
   width: 100%;
-  background: $color2;
   padding: 20px !important;
   height: 120px;
   border: none;
@@ -60,7 +59,6 @@ textarea {
 }
 
 .cta {
-  background: $color2;
   padding: 5px 15px;
   display: inline-block;
   width: auto !important;

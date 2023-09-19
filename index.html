@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" sizes="96x96" href="assets/img/public/fav-logo.png">
 </head>
 
-<body class="dark">
+<body class="active">
     <button type="button" class="cta float-end color-button">
         <i class="fa-solid fa-moon"></i>
         <i class="fa-regular fa-moon"></i>
@@ -22,7 +22,18 @@
                 <img src="assets/img/logo.png" />
             </div>
             <ul>
-                <li class="active"><a href="javascript:;">Stable Diffusion</a></li>
+                <li class="active">
+                    <a href="javascript:;">Text to Image</a>
+                </li>
+                <li>
+                    <a href="javascript:;">Image to Image</a>
+                </li>
+                <li>
+                    <a href="javascript:;">Inpainting</a>
+                </li>
+                <li>
+                    <a href="javascript:;">Fetch Queued Image</a>
+                </li>
                 <li><a href="javascript:;">Community Model</a></li>
                 <li><a href="javascript:;">Train Model</a></li>
                 <li><a href="javascript:;">Controlnet</a></li>
@@ -31,38 +42,33 @@
         <div class="right">
             <ul>
                 <li class="active">
-                    <p class="title">Stable Diffusion</p>
+                    <p class="title">Text to Image</p>
                     <form>
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-group">
-                                    <label>Select API Endpoint</label>
-                                    <select>
-                                        <option value="">Select endpoint</option>
-                                        <option value="text-to-image" selected="">Text to Image</option>
-                                        <option value="image-to-image">Image to Image</option>
-                                        <option value="inpaint">Inpainting</option>
-                                        <option value="fetch-endpoint">Fetch Queued Image</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <div class="form-group">
-                                    <label>Prompt</label>
-                                    <textarea></textarea>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <div class="form-group">
-                                    <label>Negative Prompt</label>
-                                    <textarea></textarea>
+                                   <p>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, </p>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <input class="cta" type="submit" value="Generate">
+                                <div class="form-group">
+                                    <div class="image">
+                                        <img
+                                            src="https://scontent.fist1-2.fna.fbcdn.net/v/t31.18172-8/17973860_1917923271825186_5452870843763132127_o.jpg?_nc_cat=111&ccb=1-7&_nc_sid=9267fe&_nc_ohc=hO5v-lf5UOkAX-wRRgx&_nc_ht=scontent.fist1-2.fna&oh=00_AfCSHljAx1yMAB2eY3lOLtNei8EnQZX5QDiQU31Pkb5Qgg&oe=65316EC3">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </form>
+                </li>
+                <li>
+                    <p class="title">Image to Image</p>
+                </li>
+                <li>
+                    <p class="title">Inpainting</p>
+                </li>
+                <li>
+                    <p class="title">Fetch Queued Image</p>
                 </li>
                 <li>
                     <p class="title">Community Model</p>
@@ -74,10 +80,7 @@
                     <p class="title">Controlnet</p>
                 </li>
             </ul>
-            <div class="image">
-                <img
-                    src="https://scontent.fist1-2.fna.fbcdn.net/v/t31.18172-8/17973860_1917923271825186_5452870843763132127_o.jpg?_nc_cat=111&ccb=1-7&_nc_sid=9267fe&_nc_ohc=hO5v-lf5UOkAX-wRRgx&_nc_ht=scontent.fist1-2.fna&oh=00_AfCSHljAx1yMAB2eY3lOLtNei8EnQZX5QDiQU31Pkb5Qgg&oe=65316EC3">
-            </div>
+            
         </div>
     </div>
 

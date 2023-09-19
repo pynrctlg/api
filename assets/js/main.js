@@ -39,4 +39,7 @@ $(document).ready(function () {
     $('.right li').hide();
     $('.right li:eq('+index+')').show();
   });
+  $('body').on('click','.color-button',function(){
+    $('body').toggleClass('active');
+  })
 });
