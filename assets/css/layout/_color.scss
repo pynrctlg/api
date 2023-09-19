@@ -1,0 +1,33 @@
+body {
+  &.dark {
+    background: #0f172a;
+    color: $color1;
+    .cta,
+    .left ul a,
+    .title,
+    label,
+    select,
+    textarea,
+    input {
+      color: $color1;
+    }
+    .color-button{
+        .fa-regular.fa-moon{
+            display: none;
+        }
+        .fa-solid.fa-moon-moon{
+            display: block;
+        }
+    }
+    .login-content{
+        padding: 30px;
+        border: 1px solid rgba(255,255,255,0.4);
+    }
+    input,textarea,select{
+        border: 1px solid rgba(255,255,255,0.4);
+        &::placeholder {
+            color: $color1;
+        }
+    }
+  }
+}

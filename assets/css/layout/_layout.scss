@@ -3,8 +3,7 @@ html {
 }
 
 body {
-  background: #0f172a;
-  color: #b8c2cf;
+  
   font-family: $font1;
   overflow-y: hidden;
   height: 100%;
@@ -82,6 +81,20 @@ label {
 ul{
   list-style-type: none;
   padding-left: 0;
+}
+.login-content{
+  max-width: 400px;
+  width: 100%;
+  border-radius: 5px;
+  img{
+    max-width: 80px;
+    margin-bottom: 10px;
+  }
+}
+.color-button{
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 @include media-breakpoint-only(xl) {
 }
