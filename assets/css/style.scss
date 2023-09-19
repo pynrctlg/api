@@ -1,0 +1,17 @@
+//layout
+@import "layout/fonts";
+@import "layout/vars";
+@import "layout/utilities";
+
+
+//plugin
+//bootstrap
+@import "plugin/bootstrap/bootstrap-grid";
+@import "plugin/bootstrap/bootstrap-utilities.scss";
+@import "plugin/sweetalert2/sweetalert2.scss";
+
+
+//layout
+@import "layout/layout";
+@import "layout/page";
+

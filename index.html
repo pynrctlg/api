@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start project</title>
+
+    <link href="assets/css/style.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/public/fav-logo.png">
+</head>
+
+<body>
+    <div class="d-flex w-100">
+        <div class="left">
+            <ul>
+                <li class="active"><a href="javascript:;">Stable Diffusion</a></li>
+                <li><a href="javascript:;">Community Model</a></li>
+                <li><a href="javascript:;">Train Model</a></li>
+                <li><a href="javascript:;">Controlnet</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <ul>
+                <li class="active">
+                    <p class="title">Stable Diffusion</p>
+                    <form>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label>Select API Endpoint</label>
+                                    <select>
+                                        <option value="">Select endpoint</option>
+                                        <option value="text-to-image" selected="">Text to Image</option>
+                                        <option value="image-to-image">Image to Image</option>
+                                        <option value="inpaint">Inpainting</option>
+                                        <option value="fetch-endpoint">Fetch Queued Image</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="form-group">
+                                    <label>Prompt</label>
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="form-group">
+                                    <label>Negative Prompt</label>
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <input class="cta" type="submit" value="Generate">
+                            </div>
+                        </div>
+                    </form>
+                </li>
+                <li>
+                    <p class="title">Community Model</p>
+                </li>
+                <li>
+                    <p class="title">Train Model</p>
+                </li>
+                <li>
+                    <p class="title">Controlnet</p>
+                </li>
+            </ul>
+            <div class="image">
+                <img src="https://scontent.fist1-2.fna.fbcdn.net/v/t31.18172-8/17973860_1917923271825186_5452870843763132127_o.jpg?_nc_cat=111&ccb=1-7&_nc_sid=9267fe&_nc_ohc=hO5v-lf5UOkAX-wRRgx&_nc_ht=scontent.fist1-2.fna&oh=00_AfCSHljAx1yMAB2eY3lOLtNei8EnQZX5QDiQU31Pkb5Qgg&oe=65316EC3">
+            </div>
+        </div>
+    </div>
+
+    <div class="loadingOverlay">
+        <img src="assets/img/public/loading.gif" alt="Start project" />
+    </div>
+
+    <!--Scripts-->
+    <script type="text/javascript" defer src="assets/js/jquery/jquery-3.7.0.min.js"></script>
+    <script type="text/javascript" defer src="assets/js/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" defer src="assets/js/pages/home.js"></script>
+    <script type="text/javascript" defer src="assets/js/main.js"></script>
+</body>
+
+</html>
