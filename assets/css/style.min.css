@@ -10865,13 +10865,17 @@ ul {
   max-width: 250px;
   min-height: 100vh;
   width: 100%;
-  padding-top: 50px;
+  max-height: 100vh;
+  overflow-y: auto;
 }
 .left .logo {
   width: 100%;
   text-align: center;
   background: #FFF;
   padding: 20px 0;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 .left .logo img {
   max-width: 200px;
