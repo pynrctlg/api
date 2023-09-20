@@ -14,10 +14,6 @@ var app = {
 
         var endpoint = 'https://stablediffusionapi.com/api/v3/text2img';
 
-        var myHeaders = new Headers();
-        myHeaders.append("Content-Type", "application/json");
-
-
         var raw = {
             "key": "Ddoxn9JT0nOj6FQshX3LJosr8WrSbc01RepSubAp3Eu0JwP0aw72pX0jdqIP",
             "prompt": prompt,
@@ -38,13 +34,6 @@ var app = {
             "track_id": null
         };
 
-        var requestOptions = {
-            method: 'POST',
-            headers: myHeaders,
-            body: raw,
-            redirect: 'follow'
-        };
-
         loading(true);
 
         $.ajax({
@@ -63,10 +52,6 @@ var app = {
                 loading(false);
             }
         });
-        // fetch(endpoint, requestOptions)
-        //     .then(response => response.json())
-        //     .then(result => console.log(result))
-        //     .catch(error => console.log('error', error));
     }
 
 }
