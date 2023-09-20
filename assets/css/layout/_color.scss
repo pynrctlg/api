@@ -83,7 +83,15 @@ body {
     .login-content {
       padding: 30px;
       border: 1px solid rgba(255, 255, 255, 0.4);
-      background: transparent;
+      background: $white;
+      input{
+        background: $white;
+        border: 1px solid $color2;
+        color: $color2;
+        &::placeholder {
+          color: $color2;
+        }
+      }
     }
     input,
     textarea,
