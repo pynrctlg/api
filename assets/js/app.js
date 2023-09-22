@@ -41,9 +41,12 @@ var app = {
             method: 'POST',
             data: raw,
             success: function (response) {
-                console.log(response);
-                $('#resultContent img').attr('src', response.output[0]);
-                $('#resultContent').removeClass('hide');
+                try {
+                    $('#resultContent img').attr('src', response.output[0]);
+                    $('#resultContent').removeClass('hide');   
+                } catch (error) {
+                    console.log(error);
+                }
             },
             error: function (a, b, c) {
                 console.log(a, b, c);
